@@ -246,6 +246,7 @@ justify-content: center;
         line-height: 1.5;
         letter-spacing: 0.02em;
         text-align: center;
+        margin-bottom: 8px;
 }
 
 .name-title {
@@ -262,8 +263,8 @@ justify-content: center;
     align-items: flex-start;
 }
 .iteam-box {
-    max-width: 264px;
-   max-height: 380px;
+    width: 264px;
+   height: 428px;
 border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -278,7 +279,9 @@ border-radius: 0 0 4px 4px;
         margin-top: 8px;   
 }
 .social-list-link{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    width: 40px;
     height: 40px;
         background-color: #4d5ae5;
@@ -309,6 +312,7 @@ border-radius: 0 0 4px 4px;
 }
 .portfolio-item {
     background: #fff;
+   
 }
 
 .portfolio-name {
@@ -330,6 +334,36 @@ border-radius: 0 0 4px 4px;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+}
+.overlay {
+position: relative;
+    overflow: hidden;
+}
+ 
+.cashless-overlay {
+   transform: translateY(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4d5ae5;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-overlay{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #f4f4fd;
+        padding-top: 40px;
+        padding-left: 32px;
+        padding-right: 32px;
+}
+.portfolio-item:hover .cashless-overlay{
+    transform: translateY(0);
+   
 }
 /* =======FOOTER======== */
 .page-footer {
@@ -362,4 +396,32 @@ border-radius: 0 0 4px 4px;
         letter-spacing: 0.02em;
         color: #f4f4fd;
         max-width: 264px;
+}
+.footer-title-sl{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+        margin-bottom: 16px;
+}
+.footer-social-list {
+display: flex;
+gap: 16px;
+
+}
+.footer-main-container {
+    display: flex;
+    justify-content: center;
+        align-items: center;
+}
+.footer-social-media {
+    width: 208px;
+    height: 80px;
+    margin-left: 120px;
+}
+.footer-social-list-link{
+    stroke: #FFF;
+    fill: #FFF;
 }
